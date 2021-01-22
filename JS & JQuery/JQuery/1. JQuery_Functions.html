@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type=text/javascript >
+        $(document).ready(function(){
+            $("#player").css("color", "red");
+            $(".player").css("font-size", "300%");
+            $("#player").css("padding", "10%");
+            $(".player").css("background", "cyan")
+            $(".player").css("text-align", "center");
+            
+            $("#slideUp").click(function(){
+                $("#player").slideUp();
+            });
+            
+            $("#slideDown").click(function(){
+                $("#player").slideDown();
+            });
+            
+            $("#animate").click(function(){
+                $("#player").animate({height: "300px"});
+            });
+
+
+            $("#blur").click(function(){
+                $("#player").fadeOut(2000);
+            });
+
+            $("#focus").click(function(){
+                $("#player").fadeIn(2000);
+            });
+            
+        });
+
+
+    </script>
+
+    <div id=player class=player >Watch me closely....</div> 
+    <button id=slideUp >Slide Up</button>
+    <button id=slideDown >Slide Down</button>
+    <button id=animate >Animate</button>
+    <button id=blur >Blur</button>
+    <button id=focus >Focus</button>
+
+</body>
+</html>

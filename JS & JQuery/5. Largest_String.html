@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larger String</title>
+</head>
+<body>
+    <script>
+        var myList = ["alpha", "beta", "gammaa"];
+        var maxLen = -1;
+        var maxStr = "";
+        var len = myList.length;
+        for(var i = 0; i < len; i++){
+            if(myList[i].length > maxLen){
+                maxLen = myList[i].length;
+                maxStr = myList[i];
+            }
+        }
+        alert("Large string is " + maxStr + " with length " + maxLen);
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doublets</title>
+</head>
+<body>
+    <script type=text/javascript >
+        function doublets(){
+            var input = document.getElementById('input').value;
+            var output = "";
+            for(var i = 0; i < input.length; i++){
+                for(var j = 0; j < input.length; j++){
+                    if(i != j){
+                        output += (input[i] + "" + input[j] + "<br>");
+                    }
+                }
+            }
+            document.getElementById("show").innerHTML = output;
+        }
+        
+        
+    </script>
+
+    Enter a number:<br>
+    <input type=number id=input >
+    <button onclick=doublets() >Show</button><br>
+    <div id=show ></div>
+</body>
+</html>
