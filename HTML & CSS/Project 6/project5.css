@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.name{
+    background-color: lightgreen;
+    padding: 2%;
+}
+
+h1{
+    margin: 0;;
+}
+
+.about{
+    padding: 5%;
+    color: white;
+    text-align: center;
+    background-color: orange;
+}
+
+.links{
+    padding: 2%;
+    color: white;
+    background-color: black;
+}
+
+a{
+    padding: 2%;
+    text-decoration: none;
+    margin-left: 2%;
+    color: white;
+}
+
+a:hover{
+    background-color: white;
+    color: black;
+}
+
+.body{
+    display: flex;
+}
+
+.row1{
+    padding: 1%;
+    width: 40%;
+    background-color: rgb(238, 238, 238);
+}
+
+.image, .relevant{
+    width: 100%;
+}
+
+.liked{
+    margin: 1%;
+    width: 100%;
+}
+
+p, .dark{
+    padding: 2%;
+    background-color: rgb(184, 184, 184);
+}
+
+.row2{
+    background-color: rgb(255, 255, 255);
+    padding: 1%;
+    width: 60%;
+}

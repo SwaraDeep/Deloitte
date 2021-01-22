@@ -1,0 +1,43 @@
+        body{
+            background-image: url("image2.jpg");
+        }
+        .header{
+            text-align: right;
+            padding-top: 2%;
+        }
+
+        .header_item{
+            color: white;
+            padding: 1% 4%;
+        }
+
+        .header_item:hover{
+            background-color: white;
+            color: black;
+        }
+
+        .header_item_selected{
+            padding: 1% 4%;
+            background-color: ghostwhite;
+        }
+
+        .form{
+            color: white;
+            margin-top: 5%;
+            width: 50%;
+            margin-left: 15%;
+        }
+
+        input, select{
+            margin-bottom: 2%;
+        }
+
+        .message{
+            font-size: xx-large;
+            color: white;
+            margin: 15% 0 0 40%;
+        }
+
+        a{
+            text-decoration: none;
+        }

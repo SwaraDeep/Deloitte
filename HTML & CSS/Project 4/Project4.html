@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project 4</title>
+    <link href=project4.css type=text/css rel=stylesheet>
+</head>
+<body>
+    <div class=header>
+        <span class=header_item_selected >Home</span>
+        <span class=header_item >About</span>
+        <span class=header_item >Nutrition</span>
+    </div>
+
+    <fieldset class=form>
+    <legend>Gym Form</legend>
+    <form action=formAction.html method=POST>
+        <label>Title</label><br>
+        <input type=radio name=gender value=mr>Mr
+        <input type=radio name=gender value=mrs>Mrs
+        <input type=radio name=gender value=miss>Miss
+
+        <title>First name</title><br>
+        <input type=text name=first_name >
+        <br>
+        <label>Last name</label><br>
+        <input type=text name=last_name >
+        <br>
+        <label>Email</label><br>
+        <input type=email name=email required>
+        <br>
+        <label>Phone Number</label><br>
+        <input type=number name=mobile >
+        <br>
+        <label>Password</label><br>
+        <input type=password name=password >
+        <br>
+        <label>Country</label><br>
+        <select name=country >
+            <option>India</option>
+            <option>New York</option>
+        </select>
+        <br>
+        <input type="checkbox"><a>I agree to terms and conditions</a><br>
+        <input type=reset value="Reset Form">
+        <input type=submit value=Submit>
+    </form>
+</fieldset>
+</body>
+</html>

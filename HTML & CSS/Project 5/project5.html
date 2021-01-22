@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Local Storage</title>
+</head>
+<body>
+    <script>
+        function saveData(){
+            if(localStorage){
+                var firstname = document.getElementById("firstName").value;
+                var lastname = document.getElementById("lastName").value;
+
+                localStorage.setItem("first_name", firstname);
+                localStorage.setItem("last_name", lastname);
+                alert("Data saved!");
+            }else{
+                alert("Your browser doesn't support storing data!");
+            }
+        }
+
+        function showData(){
+            if(localStorage){
+                var firstname = document.getElementById("firstNameField");
+                var lastname = document.getElementById("lastNameField");
+
+                firstname.innerHTML = localStorage.getItem("first_name");
+                lastname.innerHTML = localStorage.getItem("last_name");
+            }else{
+                alert("Your browser doesn't support storing data!");
+            }
+        }
+    </script>
+
+    First Name: <br>
+    <input type=text id=firstName ><br>
+    Last Name: <br>
+    <input type=text id=lastName >
+    <br>
+    <button onclick=saveData() >Save</button>
+    <button onclick=showData() >Show</button>
+    <div id=firstNameField ></div>
+    <div id=lastNameField ></div>
+</body>
+</html>
